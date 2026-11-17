@@ -1,0 +1,13 @@
+{
+  "mcp": {
+    "nudox": {
+      "type": "local",
+      "command": [
+        "/home/muzowih1/nudox/Nudox/bin/nudox-mcp",
+        "--project",
+        "/home/muzowih1/projects/ai-hackathon-game"
+      ],
+      "enabled": true
+    }
+  }
+}
