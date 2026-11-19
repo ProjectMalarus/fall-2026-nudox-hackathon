@@ -9,6 +9,8 @@ const state = {
   busy: false,
 };
 
+const caseTitleEl = document.getElementById("case-title");
+const caseBriefEl = document.getElementById("case-brief");
 const suspectsEl = document.getElementById("suspects");
 const questionsLeftEl = document.getElementById("questions-left");
 const chatTitleEl = document.getElementById("chat-title");
@@ -157,6 +159,10 @@ async function loadGame() {
   state.over = false;
   state.busy = false;
 
+  caseTitleEl.textContent = "";
+  caseBriefEl.textContent = "";
+  suspectsEl.replaceChildren();
+  questionInputEl.value = "";
   resultEl.className = "result hidden";
   resultEl.replaceChildren();
   restartEl.classList.add("hidden");
@@ -174,6 +180,8 @@ async function loadGame() {
     const data = await response.json();
     state.suspects = data.suspects;
     state.questionsLeft = data.questionsLeft ?? MAX_QUESTIONS;
+    caseTitleEl.textContent = data.caseTitle ?? "";
+    caseBriefEl.textContent = data.caseBrief ?? "";
 
     for (const suspect of state.suspects) {
       state.histories[suspect.id] = [];

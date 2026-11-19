@@ -73,6 +73,30 @@
         border-color: rgba(248, 113, 113, 0.4);
       }
 
+      .case-file {
+        margin-bottom: 1.5rem;
+        padding: 1.25rem;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: var(--panel);
+      }
+
+      .case-file h2 {
+        margin: 0 0 0.6rem;
+        font-size: 1.1rem;
+      }
+
+      .case-file h3 {
+        margin: 0 0 0.4rem;
+        font-size: 1rem;
+      }
+
+      .case-file p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
       .suspect-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -348,6 +372,12 @@
           <span id="questions-left" class="badge">6 questions left</span>
         </div>
       </header>
+
+      <section id="case-file" class="case-file" aria-label="Case File">
+        <h2>Case File</h2>
+        <h3 id="case-title"></h3>
+        <p id="case-brief"></p>
+      </section>
 
       <section id="suspects" class="suspect-grid" aria-label="Suspects"></section>
 
