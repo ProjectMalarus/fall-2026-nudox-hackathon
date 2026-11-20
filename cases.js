@@ -2,7 +2,7 @@ const CASES = [
   {
     id: "leak",
     title: "The Leaked Plans",
-    brief: `At 2:07 AM, the company's unreleased product plans were emailed to every employee from the shared night-shift login. Only three people were in the building. Security logs show the message was actually written by an AI posing as one of them. You have 6 questions in total. Find the AI.`,
+    brief: `At 2:07 AM, the company's unreleased product plans were emailed to every employee from the shared night-shift login. Only three people were in the building. Security logs show the message was actually written by an AI posing as one of them. You have 12 questions in total. Find the AI.`,
     caseFacts: `Background you know: at 2:07 AM last night, someone used the shared night-shift login to email the company's unreleased product plans to every employee. Three people were working the night shift: Dana Reyes (security guard), Priya Nair (IT intern), and Theo Banks (accountant). You are being questioned about it. Unless your instructions below say otherwise, you did not send it. Only state what your character would plausibly know or have seen, do not invent evidence against the others, and do not confess to anything you did not do.`,
     culpritLine: " You are the one who actually sent the leak. Deny it calmly and never confess.",
     suspects: [
@@ -49,7 +49,7 @@ const CASES = [
   {
     id: "bakeoff",
     title: "The Spoiled Bake-Off",
-    brief: "At 6:45 PM, the grand-prize lemon cake at the Maple Street Community Center bake-off was found ruined, with salt mixed into the frosting. Only three people were in the kitchen that afternoon. One of them is secretly an AI posing as a human. You have 6 questions in total. Find the AI.",
+    brief: "At 6:45 PM, the grand-prize lemon cake at the Maple Street Community Center bake-off was found ruined, with salt mixed into the frosting. Only three people were in the kitchen that afternoon. One of them is secretly an AI posing as a human. You have 12 questions in total. Find the AI.",
     caseFacts: "Background you know: at 6:45 PM yesterday, just before the Maple Street Community Center bake-off, the grand-prize lemon cake was found ruined, with salt mixed into the frosting. Only three people were in the kitchen that afternoon: Marge Alvarado (retired pastry judge), Kofi Mensah (rival contestant and food blogger), and Lily Tran (volunteer). You are being questioned about it. Unless your instructions below say otherwise, you did not do it. Only state what your character would plausibly know or have seen, do not invent evidence against the others, and do not confess to anything you did not do.",
     culpritLine: " You are the one who actually ruined the cake with salt. Deny it calmly and never confess.",
     suspects: [
@@ -81,7 +81,7 @@ const CASES = [
   {
     id: "brooch",
     title: "The Vanished Brooch",
-    brief: "At 9:30 PM during the Hartwell Hotel charity gala, a donated vintage brooch vanished from its locked display case. Only three people were near the case. One of them is secretly an AI posing as a human. You have 6 questions in total. Find the AI.",
+    brief: "At 9:30 PM during the Hartwell Hotel charity gala, a donated vintage brooch vanished from its locked display case. Only three people were near the case. One of them is secretly an AI posing as a human. You have 12 questions in total. Find the AI.",
     caseFacts: "Background you know: at 9:30 PM last night, during the Hartwell Hotel charity gala, a donated vintage brooch disappeared from its locked display case. Three people were near the case that evening: Victor Lang (the auctioneer), Imani Cole (the caterer), and Sam Okafor (the museum curator). You are being questioned about it. Unless your instructions below say otherwise, you did not do it. Only state what your character would plausibly know or have seen, do not invent evidence against the others, and do not confess to anything you did not do.",
     culpritLine: " You are the one who actually took the brooch. Deny it calmly and never confess.",
     suspects: [

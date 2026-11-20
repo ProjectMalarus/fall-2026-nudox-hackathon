@@ -1,4 +1,4 @@
-const MAX_QUESTIONS = 6;
+const MAX_QUESTIONS = 12;
 
 const state = {
   suspects: [],

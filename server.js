@@ -5,7 +5,7 @@ const { CASES } = require("./cases");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MAX_QUESTIONS = 6;
+const MAX_QUESTIONS = 12;
 
 // Groq's OpenAI-compatible chat completions endpoint. Credentials stay server-side.
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
